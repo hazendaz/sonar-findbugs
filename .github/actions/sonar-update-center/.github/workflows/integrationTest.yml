@@ -57,6 +57,7 @@ jobs:
       - uses: LouisBrunner/checks-action@v2.0.0
         if: always()
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           name: integrated-test
           sha: ${{ github.event.workflow_run.head_sha }}
           conclusion: ${{ job.status }}
