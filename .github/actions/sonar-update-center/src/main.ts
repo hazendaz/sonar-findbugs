@@ -71,7 +71,7 @@ async function run(): Promise<void> {
         ref
       )
     }
-    const mavenArtifactId = prop.get('defaults.mavenArtifactId')
+    const mavenArtifactId = prop.defaults.mavenArtifactId
     if (!mavenArtifactId) {
       throw new Error(
         'No defaults.mavenArtifactId found in the properties file'
