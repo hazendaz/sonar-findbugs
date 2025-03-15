@@ -71,6 +71,7 @@ async function run(): Promise<void> {
         ref
       )
     }
+    //const mavenArtifactId = prop.defaults.mavenArtifactId
     const mavenArtifactId = prop.get('defaults.mavenArtifactId')
     if (!mavenArtifactId) {
       throw new Error(
